@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSFNoticeHUD_Example' do
+  pod 'SSFNoticeHUD', :path => '../'
+
+  target 'SSFNoticeHUD_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
