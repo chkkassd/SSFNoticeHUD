@@ -1,6 +1,5 @@
 # SSFNoticeHUD
 
-[![CI Status](https://img.shields.io/travis/Peter Shi/SSFNoticeHUD.svg?style=flat)](https://travis-ci.org/Peter Shi/SSFNoticeHUD)
 [![Version](https://img.shields.io/cocoapods/v/SSFNoticeHUD.svg?style=flat)](https://cocoapods.org/pods/SSFNoticeHUD)
 [![License](https://img.shields.io/cocoapods/l/SSFNoticeHUD.svg?style=flat)](https://cocoapods.org/pods/SSFNoticeHUD)
 [![Platform](https://img.shields.io/cocoapods/p/SSFNoticeHUD.svg?style=flat)](https://cocoapods.org/pods/SSFNoticeHUD)
@@ -10,6 +9,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+* iOS 9.3
+* Swift 5.0
 
 ## Installation
 
@@ -20,9 +21,11 @@ it, simply add the following line to your Podfile:
 pod 'SSFNoticeHUD'
 ```
 
+## Usage
+
 ## Author
 
-Peter Shi, Peter.shi@cootek.cn
+Peter Shi, peter1990lynn@gmail.com
 
 ## License
 
