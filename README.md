@@ -22,7 +22,35 @@ pod 'SSFNoticeHUD'
 ```
 
 ## Usage
+![展示图](https://github.com/chkkassd/SSFNoticeHUD/blob/master/SSFNoticeHUDShow.gif)
+```swift
+///标准模式成功Toast（图片+文案）
+public func SSFNoticeSuccess(text: String, autoClear: Bool, delay: Double) -> SSFNoticeHUD 
+///标准模式失败Toast（图片+文案）
+public func SSFNoticeError(text: String, autoClear: Bool, delay: Double) -> SSFNoticeHUD 
+///标准模式提示信息Toast（图片+文案）
+public func SSFNoticeInfo(text: String, autoClear: Bool, delay: Double) -> SSFNoticeHUD
+///只有文案Toast
+public func SSFNoticeForOnlyText(text: String, autoClear: Bool, delay: Double) -> SSFNoticeHUD
+///标准模式加载Toast（菊花+文案）
+public func SSFNoticeForStandardLoading(text: String, autoClear: Bool, delay: Double) -> SSFNoticeHUD 
+///简易模式加载Toast（菊花）
+public func SSFNoticeForOnlyLoading(autoClear: Bool, delay: Double) -> SSFNoticeHUD 
+///状态栏成功Toast（文案+绿背景）
+public func SSFNoticeTopSuccess(text: String, autoClear: Bool, delay: Double) -> SSFNoticeHUD 
+///状态栏失败Toast（文案+红背景）
+public func SSFNoticeTopError(text: String, autoClear: Bool, delay: Double) -> SSFNoticeHUD 
+///标准模式自定义Toast（图片+文案）
+public func SSFNoticeForStandard(customImage: UIImage, text: String, autoClear: Bool, delay: Double) ->SSFNoticeHUD 
 
+//if you don't use auto clear, you can clear all hud manualy by this methdos
+public func SSFClearAll()
+```
+you can call all above methods just by 'self'
+```swift
+self.SSFNoticeSuccess(text: "Success", autoClear: true, delay: 2)
+self.SSFNoticeTopSuccess(text: "Success", autoClear: true, delay: 2)
+```
 ## Author
 
 Peter Shi, peter1990lynn@gmail.com
