@@ -1,29 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DPF-U3-Cmh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="Eca-EP-GDb">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SSFNoticeHUD_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <viewController id="DPF-U3-Cmh" customClass="ViewController" customModule="HFProgressHUD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dLs-Fi-V0P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-Gn-nEz">
+                                <rect key="frame" x="131.5" y="189" width="112" height="289"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-ER-OBT">
+                                        <rect key="frame" x="8" y="0.0" width="96" height="30"/>
+                                        <state key="normal" title="标准成功toast"/>
+                                        <connections>
+                                            <action selector="press1:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="lqk-wr-JAQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePk-3w-cOX">
+                                        <rect key="frame" x="8" y="37" width="96" height="30"/>
+                                        <state key="normal" title="标准失败toast"/>
+                                        <connections>
+                                            <action selector="press2:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="Pjf-BF-hBQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdD-iS-R1A">
+                                        <rect key="frame" x="8" y="74" width="96" height="30"/>
+                                        <state key="normal" title="标准信息toast"/>
+                                        <connections>
+                                            <action selector="press3:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="o02-ix-LAH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQU-sS-8CY">
+                                        <rect key="frame" x="0.0" y="111" width="112" height="30"/>
+                                        <state key="normal" title="只有文案的toast"/>
+                                        <connections>
+                                            <action selector="press4:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="1v0-Em-Sbf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujq-I8-BOu">
+                                        <rect key="frame" x="8" y="148" width="96" height="30"/>
+                                        <state key="normal" title="标准加载toast"/>
+                                        <connections>
+                                            <action selector="press5:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="6lx-dg-hKN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUN-D0-pRR">
+                                        <rect key="frame" x="8" y="185" width="96" height="30"/>
+                                        <state key="normal" title="简易加载toast"/>
+                                        <connections>
+                                            <action selector="press6:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="RhJ-Ck-cCc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USP-Cw-jsD">
+                                        <rect key="frame" x="0.0" y="222" width="112" height="30"/>
+                                        <state key="normal" title="状态栏成功toast"/>
+                                        <connections>
+                                            <action selector="press7:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="Puk-Fh-Tbs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ab-kC-Kui">
+                                        <rect key="frame" x="0.0" y="259" width="112" height="30"/>
+                                        <state key="normal" title="状态栏失败toast"/>
+                                        <connections>
+                                            <action selector="press8:" destination="DPF-U3-Cmh" eventType="touchUpInside" id="ANj-1A-q1a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SgT-Gn-nEz" firstAttribute="centerY" secondItem="dLs-Fi-V0P" secondAttribute="centerY" id="Q9c-K5-kcZ"/>
+                            <constraint firstItem="SgT-Gn-nEz" firstAttribute="centerX" secondItem="dLs-Fi-V0P" secondAttribute="centerX" id="xAu-6m-SMI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZPh-8W-Sfb"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6JK-Nh-COi" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

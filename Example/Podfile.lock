@@ -1,0 +1,16 @@
+PODS:
+  - SSFNoticeHUD (0.1.0)
+
+DEPENDENCIES:
+  - SSFNoticeHUD (from `../`)
+
+EXTERNAL SOURCES:
+  SSFNoticeHUD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSFNoticeHUD: 7dee68f24588e20f9edcb37d8984c99aa911db6e
+
+PODFILE CHECKSUM: d892857a8c085cb53f0dc6579f7c514fbd3a0397
+
+COCOAPODS: 1.6.1

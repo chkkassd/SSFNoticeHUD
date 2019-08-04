@@ -1,0 +1,23 @@
+{
+  "name": "SSFNoticeHUD",
+  "version": "0.1.0",
+  "summary": "A simple notice hud written by swift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Peter Shi/SSFNoticeHUD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Peter Shi": "Peter.shi@cootek.cn"
+  },
+  "source": {
+    "git": "https://github.com/Peter Shi/SSFNoticeHUD.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.3"
+  },
+  "swift_version": "5.0",
+  "source_files": "SSFNoticeHUD/Classes/**/*"
+}

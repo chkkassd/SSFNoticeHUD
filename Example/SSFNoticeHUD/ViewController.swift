@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SSFNoticeHUD
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,33 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func press1(_ sender: Any) {
+        _ = self.SSFNoticeSuccess(text: "Success", autoClear: true, delay: 2)
+    }
+
+    @IBAction func press2(_ sender: Any) {
+        _ = self.SSFNoticeError(text: "Error", autoClear: true, delay: 2)
+    }
+    @IBAction func press3(_ sender: Any) {
+        _ = self.SSFNoticeInfo(text: "infoinfo", autoClear: true, delay: 2)
+    }
+    @IBAction func press4(_ sender: Any) {
+        _ = self.SSFNoticeForOnlyText(text: "I love you", autoClear: true, delay: 2)
+    }
+
+    @IBAction func press5(_ sender: Any) {
+        _ = self.SSFNoticeForStandardLoading(text: "Loading...", autoClear: true, delay: 2)
+    }
+
+    @IBAction func press6(_ sender: Any) {
+        _ = self.SSFNoticeForOnlyLoading(autoClear: true, delay: 2)
+    }
+
+    @IBAction func press7(_ sender: Any) {
+        _ = self.SSFNoticeTopSuccess(text: "Success", autoClear: true, delay: 2)
+    }
+    @IBAction func press8(_ sender: Any) {
+        _ = self.SSFNoticeTopError(text: "Error", autoClear: true, delay: 2)
+    }
 }
 

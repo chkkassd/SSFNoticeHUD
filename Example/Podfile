@@ -1,5 +1,6 @@
 use_frameworks!
 
+platform :ios, '9.3'
 target 'SSFNoticeHUD_Example' do
   pod 'SSFNoticeHUD', :path => '../'
 
