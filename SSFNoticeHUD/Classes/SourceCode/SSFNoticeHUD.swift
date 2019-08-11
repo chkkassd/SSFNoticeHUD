@@ -121,15 +121,17 @@ class SSFStandardResultHUD: SSFNoticeHUD {
         backgroundView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         backgroundView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true
         backgroundView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-        backgroundView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
+//        backgroundView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
         //layout image
-        alertImageView.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
-        alertImageView.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: -10).isActive = true
+        alertImageView.centerXAnchor.constraint(equalTo: backgroundView.centerXAnchor).isActive = true
+        alertImageView.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 15).isActive = true
         alertImageView.widthAnchor.constraint(equalToConstant: 36.0).isActive = true
         alertImageView.heightAnchor.constraint(equalToConstant: 36.0).isActive = true
         //layout info label
         infoLabel.topAnchor.constraint(equalTo: alertImageView.bottomAnchor, constant: 8).isActive = true
-        infoLabel.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
+        infoLabel.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -8).isActive = true
+        infoLabel.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 8).isActive = true
+        infoLabel.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -8).isActive = true
     }
     
     private lazy var backgroundView: UIView = {
@@ -148,6 +150,7 @@ class SSFStandardResultHUD: SSFNoticeHUD {
         label.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
     
@@ -188,13 +191,13 @@ class SSFOnlyTextResultHUD: SSFNoticeHUD {
         backgroundView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         backgroundView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true
         backgroundView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-        backgroundView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
+//        backgroundView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
 
         //layout info label
-        infoLabel.centerYAnchor.constraint(equalTo: margins.centerYAnchor).isActive = true
-        infoLabel.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
-        infoLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 8).isActive = true
-        infoLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -8).isActive = true
+        infoLabel.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 8).isActive = true
+        infoLabel.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -8).isActive = true
+        infoLabel.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 8).isActive = true
+        infoLabel.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -8).isActive = true
     }
     
     private lazy var backgroundView: UIView = {
@@ -213,6 +216,7 @@ class SSFOnlyTextResultHUD: SSFNoticeHUD {
         label.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
 }
@@ -248,13 +252,15 @@ class SSFStandardIndicatorHUD: SSFNoticeHUD {
         backgroundView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
         backgroundView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true
         backgroundView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
-        backgroundView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
+//        backgroundView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
         //layout indicator
         indicator.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
-        indicator.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: -10).isActive = true
+        indicator.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 15.0).isActive = true
         //layout info label
         infoLabel.topAnchor.constraint(equalTo: indicator.bottomAnchor, constant: 8).isActive = true
-        infoLabel.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
+        infoLabel.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -8).isActive = true
+        infoLabel.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 8).isActive = true
+        infoLabel.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -8).isActive = true
         
         indicator.startAnimating()
     }
@@ -275,6 +281,7 @@ class SSFStandardIndicatorHUD: SSFNoticeHUD {
         label.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
     

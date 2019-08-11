@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func press1(_ sender: Any) {
-        _ = self.SSFNoticeSuccess(text: "Success", autoClear: true, delay: 2)
+        _ = self.SSFNoticeSuccess(text: "Success \nHello world", autoClear: true, delay: 2)
     }
 
     @IBAction func press2(_ sender: Any) {
@@ -32,11 +32,11 @@ class ViewController: UIViewController {
         _ = self.SSFNoticeInfo(text: "infoinfo", autoClear: true, delay: 2)
     }
     @IBAction func press4(_ sender: Any) {
-        _ = self.SSFNoticeForOnlyText(text: "I love you", autoClear: true, delay: 2)
+        _ = self.SSFNoticeForOnlyText(text: "I love you\nkkkkkjjjjjdddjdjdjdjdjdjdjdj i am a brid haha haha", autoClear: true, delay: 2)
     }
 
     @IBAction func press5(_ sender: Any) {
-        _ = self.SSFNoticeForStandardLoading(text: "Loading...", autoClear: true, delay: 2)
+        _ = self.SSFNoticeForStandardLoading(text: "Loading...\n hello world\ni am a dog dog dog dog dog dog cat, hehe hehe", autoClear: true, delay: 2)
     }
 
     @IBAction func press6(_ sender: Any) {
